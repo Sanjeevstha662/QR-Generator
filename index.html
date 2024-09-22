@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QR Code Generator</title>
+	<!-- Tailwind CSS CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+	<h1 class="text-4xl font-bold mb-8">QR CODE GENERATOR</h1>
+	<div class="main bg-white p-8 rounded-lg shadow-lg text-center">
+		<input type="text" name="" id="inputText" class="input border border-gray-300 rounded-lg p-2 mb-4 w-full text-lg" placeholder="Enter text here...">
+		<button class="btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mb-4" id="generateBtn">Generate</button> 
+		<img src="" alt="qrcode" class="code mx-auto mb-4 w-48 h-48 hidden" id="qrCode">
+		<!-- Download Button -->
+		<a id="downloadBtn" href="#" target="#" download="qrcode.png" class="hidden">
+			<button class="btn bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Download QR Code</button>
+		</a>
+		<p id="note" class="mt-4 text-gray-600">Made by <a href="https://sanjeev.info.np" target="_blank" class="text-blue-500 underline">Sanjeev Shrestha</a></p>
+	</div>
+	<div id="toast" class="hidden mt-4 bg-green-500 text-white py-2 px-4 rounded">Successfully Generated!!!</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
